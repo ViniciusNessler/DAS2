@@ -58,6 +58,9 @@ File Storage: estrutura hierárquica que simula um sistema de arquivos compartil
 Object Storage: baseado em metadados, ideal para armazenar arquivos não estruturados como imagens, vídeos e backups.
 
 AULA 24/03
-O CORS (Cross-Origin Resource Sharing) é um mecanismo que permite que recursos hospedados em um domínio sejam acessados por páginas web de outro domínio diferente. Na AWS, ele é comumente configurado em serviços como o Amazon S3, permitindo que um site (ex: hospedado no domínio A) consiga acessar arquivos públicos armazenados em buckets S3 de outro domínio (domínio B).
+O CORS (Cross-Origin Resource Sharing) permite que um site acesse recursos hospedados em outro domínio. No S3, isso é configurado por meio de políticas que autorizam origens e métodos específicos (ex: GET, POST), sendo necessário para integrações web com front-ends externos.
 
-Por padrão, o S3 bloqueia requisições feitas de origens diferentes por segurança. Para liberar esse acesso, é necessário configurar uma política CORS no bucket, definindo quais métodos (GET, POST, etc.) e origens estão autorizadas. Essa configuração é essencial quando se deseja integrar um front-end hospedado em um domínio com arquivos ou APIs hospedadas na AWS.
+O Amazon S3, por padrão, bloqueia qualquer acesso público a novos buckets ou objetos. As permissões precisam ser configuradas manualmente via IAM ou políticas específicas de bucket, e o bloqueio total de acesso público costuma vir ativado por padrão.
+
+Além disso, é possível configurar criptografia automática no bucket. A criptografia padrão do S3 não é ativada automaticamente, mas pode ser habilitada para que todos os arquivos enviados sejam protegidos. A criptografia pode ser feita com SSE-S3 (chaves da AWS), SSE-KMS (chaves do KMS) ou SSE-C (chaves do cliente).
+
