@@ -64,3 +64,44 @@ O Amazon S3, por padrão, bloqueia qualquer acesso público a novos buckets ou o
 
 Além disso, é possível configurar criptografia automática no bucket. A criptografia padrão do S3 não é ativada automaticamente, mas pode ser habilitada para que todos os arquivos enviados sejam protegidos. A criptografia pode ser feita com SSE-S3 (chaves da AWS), SSE-KMS (chaves do KMS) ou SSE-C (chaves do cliente).
 
+Aula de 27/03/2025
+index.html
+
+Aula de 03/04/2025
+Máquinas Virtuais (VMs)
+
+Amazon Elastic Compute Cloud (EC2): Fornece VMs de servidor.
+Containers
+
+Amazon Elastic Container Service (ECS)
+
+Amazon Elastic Kubernetes Service (EKS)
+Servidores Privados Virtuais (VPS)
+
+Amazon Lightsail
+Plataforma como Serviço (PaaS)
+
+AWS Elastic Beanstalk
+Serverless
+
+AWS Lambda: Execução de trechos de código.
+
+AWS Fargate: Serviço serverless para containers.
+
+Escolhendo uma AMI
+
+Ao escolher uma AMI, considere os seguintes fatores:
+
+Região
+
+Fonte da AMI:
+
+Quick Start: AMIs Linux e Microsoft Windows fornecidas pela AWS.
+
+My AMIs: AMIs criadas por você.
+
+AWS Marketplace: Modelos pré-configurados de terceiros.
+
+Community AMIs: AMIs compartilhadas por outros. Uso por sua conta e risco.
+
+Ciclo de Vida de um EC2
