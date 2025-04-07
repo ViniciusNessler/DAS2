@@ -67,7 +67,7 @@ Além disso, é possível configurar criptografia automática no bucket. A cript
 Aula de 27/03/2025
 index.html
 
-AULA 03/04/2025
+AULA 03/04
 Máquinas Virtuais (VMs)
 
 Amazon Elastic Compute Cloud (EC2): Fornece VMs de servidor.
