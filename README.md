@@ -67,7 +67,7 @@ Além disso, é possível configurar criptografia automática no bucket. A cript
 Aula de 27/03/2025
 index.html
 
-Aula de 03/04/2025
+AULA 03/04/2025
 Máquinas Virtuais (VMs)
 
 Amazon Elastic Compute Cloud (EC2): Fornece VMs de servidor.
@@ -105,3 +105,48 @@ AWS Marketplace: Modelos pré-configurados de terceiros.
 Community AMIs: AMIs compartilhadas por outros. Uso por sua conta e risco.
 
 Ciclo de Vida de um EC2
+
+AULA 07/04/2025
+Amazon FSx for Windows File Server
+
+Serviço de armazenamento de arquivos compatível com Windows.
+
+Suporte a SMB, totalmente gerenciado pela AWS.
+
+EC2 – User Data
+
+Permite rodar scripts na inicialização da instância (shell script ou cloud-init).
+
+Usado para automatizar instalações e configurações.
+
+Metadados da Instância
+
+Informações sobre a própria instância.
+
+Acessíveis via: http://169.254.169.254/latest/meta-data/
+
+Podem ser utilizados em scripts de inicialização.
+
+Boas Práticas – Execução Manual
+
+Preferir automação via user data.
+
+Evitar alterações manuais sem controle.
+
+Validar se a inicialização está correta após alterações.
+
+Modelos de AMI
+
+Basic AMI: imagem mínima, exige configuração manual.
+
+Silver AMI: inclui parte dos softwares, requer ajustes.
+
+Golden AMI: imagem totalmente configurada e pronta para uso.
+
+Estratégias de Distribuição de Instâncias
+
+Cluster: alta performance, baixa latência (HPC).
+
+Spread: alta disponibilidade, instâncias distribuídas.
+
+Partition: isolamento físico entre grupos de instâncias.
