@@ -150,3 +150,20 @@ Cluster: alta performance, baixa latência (HPC).
 Spread: alta disponibilidade, instâncias distribuídas.
 
 Partition: isolamento físico entre grupos de instâncias.
+
+
+AULA 10/04/2025
+
+Amazon RDS: banco relacional gerenciado com backup, failover e escalabilidade.
+
+Bancos Relacionais: consistência e ACID (MySQL, PostgreSQL etc).
+
+Bancos Não-Relacionais: escaláveis, flexíveis (DynamoDB, MongoDB etc).
+
+Critérios de escolha: tipo de dado, padrão de acesso, consistência e volume.
+
+RDS: serviço de banco relacional gerenciado (MySQL, PostgreSQL, Oracle, etc.).
+
+Não-Relacionais: bancos como DynamoDB, MongoDB, voltados para dados flexíveis e escaláveis.
+
+Discutimos como escolher o banco mais adequado baseado em necessidade de consistência, escalabilidade, modelo de dados e performance.
