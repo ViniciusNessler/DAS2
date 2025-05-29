@@ -167,3 +167,45 @@ RDS: serviço de banco relacional gerenciado (MySQL, PostgreSQL, Oracle, etc.).
 Não-Relacionais: bancos como DynamoDB, MongoDB, voltados para dados flexíveis e escaláveis.
 
 Discutimos como escolher o banco mais adequado baseado em necessidade de consistência, escalabilidade, modelo de dados e performance.
+
+
+AULA 05/05
+
+VPC (Virtual Private Cloud) define uma rede privada e isolada dentro da AWS.
+CIDR (Classless Inter-Domain Routing) especifica o bloco de endereços IP utilizados na VPC.
+Subnets dividem a VPC em partes menores.
+Subnets públicas têm acesso à internet por meio de um Internet Gateway.
+As rotas devem ser configuradas para direcionar o tráfego externo.
+Instâncias em subnet pública devem ter IP público habilitado e associadas a uma tabela de rota que contenha o Internet Gateway.
+
+AULA 12/05
+
+Fazer os laboratórios Canvas
+Guided lab: Creating a Virtual Private Cloud
+Challenge (Cafe) lab: Creating a VPC Networking Environment for the Café
+
+AULA 15/05
+
+Fazer os laboratórios Canvas
+Guided lab: Creating a Virtual Private Cloud
+Challenge (Cafe) lab: Creating a VPC Networking Environment for the Café
+
+AULA 19/05
+
+VPC Peering permite a comunicação privada entre duas VPCs na mesma região ou em regiões diferentes.
+Não permite tráfego transverso automático (ex: VPC A com VPC B e VPC B com VPC C não conecta A com C).
+AWS VPN Site-to-Site estabelece uma conexão criptografada entre a VPC e a rede on-premises, utilizando o protocolo IPsec.
+Requer Customer Gateway (CGW) e Virtual Private Gateway (VGW).
+AWS Direct Connect oferece uma conexão física dedicada entre o data center do cliente e a AWS, com maior largura de banda e menor latência.
+Útil para transferência de dados em larga escala e integrações corporativas.
+
+AULA 26/05
+
+IAM Groups permitem aplicar permissões a múltiplos usuários de forma centralizada.
+Facilita o gerenciamento de políticas para perfis com a mesma função.
+IAM Roles permitem conceder permissões temporárias para usuários ou serviços assumirem funções específicas.
+AWS STS (Security Token Service) gera credenciais temporárias seguras com tempo de expiração definido.
+Muito utilizado para autenticação entre contas ou serviços da AWS.
+AWS Cognito permite autenticação e autorização de usuários em aplicações web e mobile.
+Integra login com provedores externos (Google, Facebook, Apple) ou diretórios corporativos (via SAML).
+Gera tokens JWT (ID, Access e Refresh) para controle de sessão e acesso.
